@@ -140,7 +140,20 @@ class App extends Component {
               </div>
             </div>
             <div className="col-6">
-              <h1>Movies Watchlist</h1>
+              <h1>
+                Movies Watchlist{" "}
+                <span
+                  style={{
+                    backgroundColor: "grey",
+                    borderRadius: "5px",
+                    width: "25px",
+                    color: "white"
+                  }}
+                >
+                  {tableWatchlist.length ? tableWatchlist.length : 0}
+                </span>
+              </h1>
+
               <table>
                 <thead>
                   <tr>
@@ -165,7 +178,19 @@ class App extends Component {
               </table>
             </div>
             <div className="col-6">
-              <h1>Movies Watched</h1>
+              <h1>
+                Movies Watched{" "}
+                <span
+                  style={{
+                    backgroundColor: "grey",
+                    borderRadius: "5px",
+                    width: "25px",
+                    color: "white"
+                  }}
+                >
+                  {tableWatched.length ? tableWatched.length : 0}
+                </span>
+              </h1>
 
               <table>
                 <thead>
